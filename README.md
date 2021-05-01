@@ -17,13 +17,21 @@ In order to install the necessary Python libraries, run the following command:
 TODO
 ```
 
-## How to execute
+## How to run
 
 ### Data generation
 
 ### Fully Convolutional Denoising Autoencoder
 
 ### Wavelet denoising methods DWT and SWT
+
+```
+cd wavelet_denoising
+```
+
+For: 
+* Discrete Wavelet Transform (DWT): Run `dwt_denoising.m`
+* Stationary Wavelet Transform (SWT): Run `swt_denoising.m`
 
 ## Results
 
