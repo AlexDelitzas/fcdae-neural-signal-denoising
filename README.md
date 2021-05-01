@@ -7,7 +7,7 @@ Extracellular recordings are severely contaminated by a considerable amount of n
 
 ## Requirements
 
-* Python (tested with v[TODO]): Used for the data generation and the network's development
+* Python (tested with v3.8): Used for the data generation and the network's development
 
 * Matlab (tested with R2020b): Used for the development of the wavelet denoising methods to compare the network's performance
 
