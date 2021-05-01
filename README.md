@@ -1,9 +1,9 @@
-### Code for the paper [TODO]
+Code for the paper [TODO]
 <br />
 
 ## Abstract
 
-[TODO]
+Extracellular recordings are severely contaminated by a considerable amount of noise sources, rendering the denoising process an extremely challenging task that should be tackled for efficient spike sorting. To this end, we propose an end-to-end deep learning approach to the problem, utilizing a Fully Convolutional Denoising Autoencoder, which learns to produce a clean neuronal activity signal from a noisy multichannel input. The experimental results on simulated data show that our proposed method can improve significantly the quality of noise-corrupted neural signals, outperforming widely-used wavelet denoising techniques.
 
 ## Requirements
 
@@ -28,6 +28,8 @@ TODO
 ## Results
 
 ### SNR Improvement
+
+<br />
 
 <table>
 <thead>
@@ -74,6 +76,8 @@ TODO
 </tbody>
 </table>
 
+<br />
+
 <table>
 <thead>
 <tr>
@@ -118,6 +122,8 @@ TODO
 </tr>
 </tbody>
 </table>
+
+<br />
 
 <table>
 <thead>
@@ -165,6 +171,7 @@ TODO
 </table>
 
 <br />
+
 ### RMSE
 
 [TODO]
