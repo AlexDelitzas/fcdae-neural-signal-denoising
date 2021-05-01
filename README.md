@@ -27,7 +27,7 @@ TODO
 
 ## Results
 
-### SNR Improvement
+### Per channel SNR Improvement
 
 <br />
 
@@ -172,6 +172,6 @@ TODO
 
 <br />
 
-### RMSE
+### Per channel RMSE
 
 [TODO]
