@@ -47,31 +47,31 @@ TODO
 <tbody>
 <tr>
 <td align="center">7 / (0.60, 2.87)</td>
-<td align="center">7.786</td>
-<td align="center">7.373</td>
-<td align="center">5.902</td>
-<td align="center">8.143</td>
+<td align="center">8.184</td>
+<td align="center">7.672</td>
+<td align="center">6.207</td>
+<td align="center">8.429</td>
 </tr>
 <tr>
 <td align="center">9 / (-1.36, 0.77)</td>
-<td align="center">9.540</td>
-<td align="center">7.428</td>
-<td align="center">6.801</td>
-<td align="center">9.000</td>
+<td align="center">10.012</td>
+<td align="center">7.901</td>
+<td align="center">7.241</td>
+<td align="center">9.455</td>
 </tr>
 <tr>
 <td align="center">15 / (-5.29, -3.59)</td>
-<td align="center">9.618</td>
-<td align="center">9.492</td>
-<td align="center">9.127</td>
-<td align="center">10.816</td>
+<td align="center">9.997</td>
+<td align="center">9.888</td>
+<td align="center">9.506</td>
+<td align="center">11.223</td>
 </tr>
 <tr>
 <td align="center">20 / (-7.02, -5.97)</td>
-<td align="center">10.525</td>
-<td align="center">10.352</td>
-<td align="center">10.933</td>
-<td align="center">11.402</td>
+<td align="center">10.579</td>
+<td align="center">10.460</td>
+<td align="center">11.029</td>
+<td align="center">11.499</td>
 </tr>
 </tbody>
 </table>
