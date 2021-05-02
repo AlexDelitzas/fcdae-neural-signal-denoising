@@ -1,0 +1,11 @@
+template_file: ./templates/templates_L5_n50.h5
+
+duration: 5
+
+n_exc: 3
+n_inh: 3
+
+noise_level: 7
+noise_mode: distance-correlated
+overlap: True
+bursting: True
