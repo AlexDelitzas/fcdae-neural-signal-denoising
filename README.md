@@ -19,17 +19,15 @@ TODO
 
 ## How to run
 
-### Data generation
-
 ### Fully Convolutional Denoising Autoencoder
 
 ```
 cd fcdae_network
 ```
 
-**Training & Evaluation**
+For **Training & Evaluation**:
 
-Run:
+Run
 
 ```
 python fc_dae_model_train_and_test.py
