@@ -14,8 +14,31 @@ Extracellular recordings are severely contaminated by a considerable amount of n
 In order to install the necessary Python libraries, run the following command:
 
 ```
-TODO
+pip install -r requirements.txt
 ```
+
+## Dataset 
+
+The extracellular recordings that were used for training and evaluation are available in two formats, i.e. `.mat` and `.tfrecord`.
+
+```
+.
+|-- data/
+|   |-- mat/
+|   |-- TFRecord/
+.
+```
+
+Data are organized as follows:
+
+```
+e_mix33_n<L>_iter<K>.{mat,tfrecord}
+```
+
+where 
+
+* `<L>` is the noise level in μV (`<L>` = [7, 9, 15, 20])and 
+* `<K>` the recording number (`<K>` = [0, 1, ..., 9])
 
 ## How to run
 
