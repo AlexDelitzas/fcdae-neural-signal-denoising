@@ -11,6 +11,9 @@ from models import create_fcdae
 from utils import calculateSNRImprovement, calculateRMSE
     
 
+# Change device to "CPU" if you want to run tensorflow on your CPU.
+use_device = "GPU"
+
 physical_devices = tf.config.experimental.list_physical_devices('GPU')
 assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
 config = tf.config.experimental.set_memory_growth(physical_devices[0], True)
