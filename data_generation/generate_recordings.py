@@ -96,7 +96,14 @@ while cur_iter < n_iterations:
       y = f['recordings'][()]
       gt = f['spike_traces'][()]
       
-      mdict = {'y': y, 'ground_truth':gt}
+      gt[:, 0] = gt[:, 0] - gt[:, 0].mean()
+      ground_truth = gt[:, 0] 
+      for i in range(1, gt.shape[1]):
+          gt[:, i] = gt[:, i] - gt[:, i].mean()
+          ground_truth += gt[:, i] 
+      ground_truth /= np.abs(ground_truth).max()
+      
+      mdict = {'y': y, 'ground_truth':ground_truth}
 
       sio.savemat(mat_output_filename, mdict)
       cur_iter += 1

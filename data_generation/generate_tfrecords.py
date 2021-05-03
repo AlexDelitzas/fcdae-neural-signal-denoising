@@ -29,17 +29,9 @@ class TFRecordDatasetBuilder:
         for i in range(0, data.shape[1]):
             data[:, i] = data[:, i] - data[:, i].mean()
             data[:, i] = data[:, i] / numpy.abs(data[:, i]).max()
-             
-        targets[:, 0] = targets[:, 0] - targets[:, 0].mean()
-        ground_truth = targets[:, 0] 
-        for i in range(1, targets.shape[1]):
-            targets[:, i] = targets[:, i] - targets[:, i].mean()
-            ground_truth += targets[:, i] 
-        
-        ground_truth /= numpy.abs(ground_truth).max()
 
         data = resizeMultiChannelData(data, inputSize, stride)
-        targets = resizeData(ground_truth, inputSize, stride)
+        targets = resizeData(targets, inputSize, stride)
         
         return data, targets
                          
