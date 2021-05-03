@@ -281,31 +281,31 @@ After the conversion, the recordings will be saved in the folder `data/TFRecord/
 <tbody>
 <tr>
 <td align="center">7 / (0.60, 2.87)</td>
-<td align="center">0.02321213</td>
-<td align="center">0.02344057</td>
-<td align="center">0.02341407</td>
-<td align="center">0.02362822</td>
+<td align="center">0.02321</td>
+<td align="center">0.02344</td>
+<td align="center">0.02341</td>
+<td align="center">0.02363</td>
 </tr>
 <tr>
 <td align="center">9 / (-1.36, 0.77)</td>
-<td align="center">0.0233893</td>
-<td align="center">0.02332329</td>
-<td align="center">0.02341504</td>
-<td align="center">0.02341596</td>
+<td align="center">0.02339</td>
+<td align="center">0.02332</td>
+<td align="center">0.02342</td>
+<td align="center">0.02342</td>
 </tr>
 <tr>
 <td align="center">15 / (-5.29, -3.59)</td>
-<td align="center">0.03237345</td>
-<td align="center">0.03232981</td>
-<td align="center">0.03239835</td>
-<td align="center">0.03234965</td>
+<td align="center">0.03237</td>
+<td align="center">0.03233</td>
+<td align="center">0.03240</td>
+<td align="center">0.03235</td>
 </tr>
 <tr>
 <td align="center">20 / (-7.02, -5.97)</td>
-<td align="center">0.03672666</td>
-<td align="center">0.03663537</td>
-<td align="center">0.03661567</td>
-<td align="center">0.03667395</td>
+<td align="center">0.03673</td>
+<td align="center">0.03664</td>
+<td align="center">0.03662</td>
+<td align="center">0.03667</td>
 </tr>
 </tbody>
 </table>
@@ -328,31 +328,31 @@ After the conversion, the recordings will be saved in the folder `data/TFRecord/
 <tbody>
 <tr>
 <td align="center">7 / (0.60, 2.87)</td>
-<td align="center">0.04727205</td>
-<td align="center">0.0350675</td>
-<td align="center">0.03401691</td>
-<td align="center">0.04321196</td>
+<td align="center">0.04727</td>
+<td align="center">0.03507</td>
+<td align="center">0.03402</td>
+<td align="center">0.04321</td>
 </tr>
 <tr>
 <td align="center">9 / (-1.36, 0.77)</td>
-<td align="center">0.04649062</td>
-<td align="center">0.03688966</td>
-<td align="center">0.03656572</td>
-<td align="center">0.04553343</td>
+<td align="center">0.04649</td>
+<td align="center">0.03689</td>
+<td align="center">0.03657</td>
+<td align="center">0.04553</td>
 </tr>
 <tr>
 <td align="center">15 / (-5.29, -3.59)</td>
-<td align="center">0.05209082</td>
-<td align="center">0.04758105</td>
-<td align="center">0.04766888</td>
-<td align="center">0.05495854</td>
+<td align="center">0.05209</td>
+<td align="center">0.04758</td>
+<td align="center">0.04767</td>
+<td align="center">0.05496</td>
 </tr>
 <tr>
 <td align="center">20 / (-7.02, -5.97)</td>
-<td align="center">0.05535215</td>
-<td align="center">0.05441522</td>
-<td align="center">0.05636098</td>
-<td align="center">0.05825317</td>
+<td align="center">0.05535</td>
+<td align="center">0.05442</td>
+<td align="center">0.05636</td>
+<td align="center">0.05825</td>
 </tr>
 </tbody>
 </table>
@@ -375,31 +375,31 @@ After the conversion, the recordings will be saved in the folder `data/TFRecord/
 <tbody>
 <tr>
 <td align="center">7 / (0.60, 2.87)</td>
-<td align="center">0.04731455</td>
-<td align="center">0.03344156</td>
-<td align="center">0.03220947</td>
-<td align="center">0.04279093</td>
+<td align="center">0.04731</td>
+<td align="center">0.03344</td>
+<td align="center">0.03221</td>
+<td align="center">0.04279</td>
 </tr>
 <tr>
 <td align="center">9 / (-1.36, 0.77)</td>
-<td align="center">0.04891415</td>
-<td align="center">0.0382347</td>
-<td align="center">0.03608066</td>
-<td align="center">0.04637574</td>
+<td align="center">0.04891</td>
+<td align="center">0.03823</td>
+<td align="center">0.03608</td>
+<td align="center">0.04638</td>
 </tr>
 <tr>
 <td align="center">15 / (-5.29, -3.59)</td>
-<td align="center">0.04997746</td>
-<td align="center">0.04388772</td>
-<td align="center">0.0439347</td>
-<td align="center">0.05199479</td>
+<td align="center">0.04998</td>
+<td align="center">0.04389</td>
+<td align="center">0.04393</td>
+<td align="center">0.05199</td>
 </tr>
 <tr>
 <td align="center">20 / (-7.02, -5.97)</td>
-<td align="center">0.05208914</td>
-<td align="center">0.05091824</td>
-<td align="center">0.05311781</td>
-<td align="center">0.05499653</td>
+<td align="center">0.05209</td>
+<td align="center">0.05092</td>
+<td align="center">0.05312</td>
+<td align="center">0.05500</td>
 </tr>
 </tbody>
 </table>
