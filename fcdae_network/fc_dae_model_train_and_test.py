@@ -8,7 +8,7 @@ from random import shuffle
 import random
 
 from models import create_fcdae
-from utils import calculateSNRImprovement
+from utils import calculateSNRImprovement, calculateRMSE
     
 
 physical_devices = tf.config.experimental.list_physical_devices('GPU')
@@ -16,7 +16,7 @@ assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
 config = tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 batch_size = 8
-noise_level = 20
+noise_level = 7
 
 def _parse_function(example_proto):
     keys_to_features = {
@@ -32,6 +32,7 @@ def _parse_function(example_proto):
 
 ##############################################################################
 SNRs = []
+RMSEs = []
 test_indexes = []
 
 random.seed()
@@ -119,18 +120,20 @@ for experiment_iteration_index in range(n_experiment_iterations):
     predictions = np.reshape(predictions, (predictions.shape[0] * predictions.shape[1], predictions.shape[2]))
     testy = np.reshape(testy, (testy.shape[0] * testy.shape[1], testy.shape[2]))
     
-    
-    clean_signal_output_filename = '../data/fcdae_output/e_mix33_n' \
-        + str(noise_level) + '_iter' + str(experiment_iteration_index) + '_cdae.mat'
-    mdict = {'testX': testX, 'testy':testy, 'predictions':predictions}
-    sio.savemat(clean_signal_output_filename, mdict)
+    # Uncomment the following to save the model's output
+    #clean_signal_output_filename = '../data/fcdae_output/e_mix33_n' \
+    #    + str(noise_level) + '_iter' + str(experiment_iteration_index) + '_cdae.mat'
+    #mdict = {'testX': testX, 'testy':testy, 'predictions':predictions}
+    #sio.savemat(clean_signal_output_filename, mdict)
 
     
     SNR_before, SNR_after, SNR_imp = calculateSNRImprovement(testX = testX,
                                                              testy = testy,
-                                                             predictions = predictions)   
+                                                             predictions = predictions)
+    RMSE = calculateRMSE(testy, predictions)
         
     SNRs.append({'SNR_before': SNR_before, 'SNR_after': SNR_after, 'SNR_imp': SNR_imp})
+    RMSEs.append(RMSE)
     test_indexes.append(test_dataset_filenames)
     
     for i in range(SNR_imp.size):
@@ -138,18 +141,23 @@ for experiment_iteration_index in range(n_experiment_iterations):
         SNR_before_str = "{:.2f}".format(SNR_before[i])
         SNR_imp_str = "{:.2f}".format(SNR_imp[i])
         print("Channel ", i, "SNR after:  ",SNR_after_str," SNR improvement: ", SNR_imp_str, \
-              " dB | Before: ", SNR_before_str, " dB")
+              " dB | Before: ", SNR_before_str, " dB | RMSE: ", RMSE[i])
 
 mean_SNR_improvement = 0
 mean_SNR_before = 0
+mean_RMSE = 0
 for i in range(len(SNRs)):
     mean_SNR_improvement += SNRs[i]['SNR_imp']
     mean_SNR_before += SNRs[i]['SNR_before']
+    mean_RMSE += RMSEs[i]
     
 mean_SNR_improvement /= float(len(SNRs))
 mean_SNR_before /= float(len(SNRs))
+mean_RMSE /= float(len(RMSEs))
 
 print("=== Mean SNRs before ===")
 print(mean_SNR_before)
 print("=== Mean SNRs improvement ===")
 print(mean_SNR_improvement)
+print("=== Mean RMSEs improvement ===")
+print(mean_RMSE)
