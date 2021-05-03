@@ -19,9 +19,19 @@ TODO
 
 ## How to run
 
-### Data generation
-
 ### Fully Convolutional Denoising Autoencoder
+
+```
+cd fcdae_network
+```
+
+For **Training & Evaluation**:
+
+Run
+
+```
+python fc_dae_model_train_and_test.py
+```
 
 ### Wavelet denoising methods DWT and SWT
 
