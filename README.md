@@ -78,7 +78,7 @@ For:
 <th align="center" colspan="5">Fully Convolutional Denoising Autoencoder (FCDAE)</th>
 </tr>
 <tr>
-<th align="center">Input Noise Level (μV / (mindB,maxdB)</th>
+<th align="center">Input Noise Level (μV / (mindB,maxdB))</th>
 <th align="center">SNR Improvement CH1 (dB)</th>
 <th align="center">SNR Improvement CH2 (dB)</th>
 <th align="center">SNR Improvement CH3 (dB)</th>
@@ -125,7 +125,7 @@ For:
 <th align="center" colspan="5">Discrete Wavelet Transform (DWT)</th>
 </tr>
 <tr>
-<th align="center">Input Noise Level (μV / (mindB,maxdB)</th>
+<th align="center">Input Noise Level (μV / (mindB,maxdB))</th>
 <th align="center">SNR Improvement CH1 (dB)</th>
 <th align="center">SNR Improvement CH2 (dB)</th>
 <th align="center">SNR Improvement CH3 (dB)</th>
@@ -172,7 +172,7 @@ For:
 <th align="center" colspan="5">Stationary Wavelet Transform (SWT)</th>
 </tr>
 <tr>
-<th align="center">Input Noise Level (μV / (mindB,maxdB)</th>
+<th align="center">Input Noise Level (μV / (mindB,maxdB))</th>
 <th align="center">SNR Improvement CH1 (dB)</th>
 <th align="center">SNR Improvement CH2 (dB)</th>
 <th align="center">SNR Improvement CH3 (dB)</th>
