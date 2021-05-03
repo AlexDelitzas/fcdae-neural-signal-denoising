@@ -38,7 +38,7 @@ e_mix33_n<L>_iter<K>.{mat,tfrecord}
 where 
 
 * `<L>` is the noise level in μV (`<L>` = [7, 9, 15, 20]) and 
-* `<K>` the recording number (`<K>` = [0, 1, ..., 9])
+* `<K>` is the recording number (`<K>` = [0, 1, ..., 9])
 
 ## How to run
 
