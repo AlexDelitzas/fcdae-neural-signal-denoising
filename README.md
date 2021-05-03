@@ -215,4 +215,146 @@ For:
 
 ### Per channel RMSE
 
-[TODO]
+<br />
+
+<p>
+<table>
+<thead>
+<tr>
+<th align="center" colspan="5">Fully Convolutional Denoising Autoencoder (FCDAE)</th>
+</tr>
+<tr>
+<th align="center">Input Noise Level (μV / (mindB,maxdB))</th>
+<th align="center">RMSE CH1</th>
+<th align="center">RMSE CH2</th>
+<th align="center">RMSE CH3</th>
+<th align="center">RMSE CH4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">7 / (0.60, 2.87)</td>
+<td align="center">0.02321213</td>
+<td align="center">0.02344057</td>
+<td align="center">0.02341407</td>
+<td align="center">0.02362822</td>
+</tr>
+<tr>
+<td align="center">9 / (-1.36, 0.77)</td>
+<td align="center">0.0233893</td>
+<td align="center">0.02332329</td>
+<td align="center">0.02341504</td>
+<td align="center">0.02341596</td>
+</tr>
+<tr>
+<td align="center">15 / (-5.29, -3.59)</td>
+<td align="center">0.03237345</td>
+<td align="center">0.03232981</td>
+<td align="center">0.03239835</td>
+<td align="center">0.03234965</td>
+</tr>
+<tr>
+<td align="center">20 / (-7.02, -5.97)</td>
+<td align="center">0.03672666</td>
+<td align="center">0.03663537</td>
+<td align="center">0.03661567</td>
+<td align="center">0.03667395</td>
+</tr>
+</tbody>
+</table>
+</p>
+<br />
+
+<table>
+<thead>
+<tr>
+<th align="center" colspan="5">Discrete Wavelet Transform (DWT)</th>
+</tr>
+<tr>
+<th align="center">Input Noise Level (μV / (mindB,maxdB))</th>
+<th align="center">RMSE CH1</th>
+<th align="center">RMSE CH2</th>
+<th align="center">RMSE CH3</th>
+<th align="center">RMSE CH4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">7 / (0.60, 2.87)</td>
+<td align="center">0.04727205</td>
+<td align="center">0.0350675</td>
+<td align="center">0.03401691</td>
+<td align="center">0.04321196</td>
+</tr>
+<tr>
+<td align="center">9 / (-1.36, 0.77)</td>
+<td align="center">0.04649062</td>
+<td align="center">0.03688966</td>
+<td align="center">0.03656572</td>
+<td align="center">0.04553343</td>
+</tr>
+<tr>
+<td align="center">15 / (-5.29, -3.59)</td>
+<td align="center">0.05209082</td>
+<td align="center">0.04758105</td>
+<td align="center">0.04766888</td>
+<td align="center">0.05495854</td>
+</tr>
+<tr>
+<td align="center">20 / (-7.02, -5.97)</td>
+<td align="center">0.05535215</td>
+<td align="center">0.05441522</td>
+<td align="center">0.05636098</td>
+<td align="center">0.05825317</td>
+</tr>
+</tbody>
+</table>
+
+<br />
+
+<table>
+<thead>
+<tr>
+<th align="center" colspan="5">Stationary Wavelet Transform (SWT)</th>
+</tr>
+<tr>
+<th align="center">Input Noise Level (μV / (mindB,maxdB))</th>
+<th align="center">RMSE CH1</th>
+<th align="center">RMSE CH2</th>
+<th align="center">RMSE CH3</th>
+<th align="center">RMSE CH4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">7 / (0.60, 2.87)</td>
+<td align="center">0.04731455</td>
+<td align="center">0.03344156</td>
+<td align="center">0.03220947</td>
+<td align="center">0.04279093</td>
+</tr>
+<tr>
+<td align="center">9 / (-1.36, 0.77)</td>
+<td align="center">0.04891415</td>
+<td align="center">0.0382347</td>
+<td align="center">0.03608066</td>
+<td align="center">0.04637574</td>
+</tr>
+<tr>
+<td align="center">15 / (-5.29, -3.59)</td>
+<td align="center">0.04997746</td>
+<td align="center">0.04388772</td>
+<td align="center">0.0439347</td>
+<td align="center">0.05199479</td>
+</tr>
+<tr>
+<td align="center">20 / (-7.02, -5.97)</td>
+<td align="center">0.05208914</td>
+<td align="center">0.05091824</td>
+<td align="center">0.05311781</td>
+<td align="center">0.05499653</td>
+</tr>
+</tbody>
+</table>
+
+<br />
