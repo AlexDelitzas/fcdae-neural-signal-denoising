@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 import numpy as np
 import scipy.io as sio
-from scipy.signal import find_peaks
-
 
 def loadData(dataFolder, fileName, extension, inputSignalTag, groundTruthSignalTag):
   mat = sio.loadmat(dataFolder + '/' + fileName + '.' + extension)
