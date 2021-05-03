@@ -86,6 +86,31 @@ In case you want to recreate a dataset, follow the instructions below:
 cd data_generation
 ```
 
+*Step 1 (Optional)*: Run the following command to generate the extracellular templates
+
+```
+python generate_templates.py
+```
+
+The templates will be saved in the folder `data_generation/templates/` in `.h5` format. Step 1 can be completely omitted by using the existing templates located in the aforementioned folder.
+
+*Step 2*: Run the following command to create the extracellular recordings
+
+```
+python generate_recordings.py
+```
+
+The recordings will be saved in the folder `data/mat/` in `.mat` format and in the folder `data_generation/h5_recordings/` in `.h5` format. In case you want to alter the generation settings of the recordings, you can change the parameters in the `.yaml` files located at `data_generation/recording_settings/`.
+
+*Step 3*: Run the following command to convert the extracellular recordings data in `.tfrecord` format.
+
+```
+python generate_tfrecords.py
+```
+
+After the conversion, the recordings will be saved in the folder `data/TFRecord/` in `.tfrecord` format. These files are used for the autoencoder's training.
+
+
 <br />
 
 ## Results
