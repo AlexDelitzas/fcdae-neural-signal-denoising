@@ -1,4 +1,4 @@
-Code for the paper [TODO]
+Code for the paper "Removing Noise from Extracellular Neural Recordings Using Fully Convolutional Denoising Autoencoders"
 <br />
 
 ## Abstract
