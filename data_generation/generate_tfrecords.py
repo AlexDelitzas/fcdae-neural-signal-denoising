@@ -49,7 +49,7 @@ class TFRecordDatasetBuilder:
         fileFormat = 'mat'
 
         data, targets = loadData(self.dataset_folder, signal_file_name, fileFormat, inputSignal, groundTruthSignal)
-    
+        targets = targets.flatten()
         data, targets = self.convert_to_windowed_data(data, targets)
         print("\t Number of samples: " , targets.shape[0])
     
