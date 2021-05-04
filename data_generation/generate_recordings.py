@@ -21,7 +21,7 @@ while cur_iter < n_iterations:
 
   recordings_params = mr.get_default_recordings_params()
 
-  recording_path = '../data/h5/' + experiment_name + '_iter' + str(cur_iter) + '.h5'
+  recording_path = './h5_recordings/' + experiment_name + '_iter' + str(cur_iter) + '.h5'
   mat_output_filename = '../data/mat/' + experiment_name + '_iter' + str(cur_iter) + '.mat'
 
   print("Reading settings from input file " + argument_file)
