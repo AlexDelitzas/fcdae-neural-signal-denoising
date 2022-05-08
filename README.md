@@ -1,6 +1,23 @@
 Code for the paper "Removing Noise from Extracellular Neural Recordings Using Fully Convolutional Denoising Autoencoders"
 <br />
 
+Paper: https://ieeexplore.ieee.org/abstract/document/9630585
+
+Cite as:
+
+```
+@INPROCEEDINGS{9630585,  
+  author={Kechris, Christodoulos and Delitzas, Alexandros and Matsoukas, Vasileios and Petrantonakis, Panagiotis C.},  
+  booktitle={2021 43rd Annual International Conference of the IEEE Engineering in Medicine \& Biology Society (EMBC)},   
+  title={Removing Noise from Extracellular Neural Recordings Using Fully Convolutional Denoising Autoencoders},   
+  year={2021},  
+  volume={},  
+  number={},  
+  pages={890-893},  
+  doi={10.1109/EMBC46164.2021.9630585}
+}
+```
+
 ## Abstract
 
 Extracellular recordings are severely contaminated by a considerable amount of noise sources, rendering the denoising process an extremely challenging task that should be tackled for efficient spike sorting. To this end, we propose an end-to-end deep learning approach to the problem, utilizing a Fully Convolutional Denoising Autoencoder, which learns to produce a clean neuronal activity signal from a noisy multichannel input. The experimental results on simulated data show that our proposed method can improve significantly the quality of noise-corrupted neural signals, outperforming widely-used wavelet denoising techniques.
